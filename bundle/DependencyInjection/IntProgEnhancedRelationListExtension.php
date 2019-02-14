@@ -68,5 +68,7 @@ class IntProgEnhancedRelationListExtension extends Extension implements PrependE
             $container->prependExtensionConfig($namespace, $config);
             $container->addResource(new FileResource($configsDir . $file));
         }
+
+        $container->prependExtensionConfig('bazinga_js_translation', ['active_domains' => ['enhancedrelationlist']]);
     }
 }

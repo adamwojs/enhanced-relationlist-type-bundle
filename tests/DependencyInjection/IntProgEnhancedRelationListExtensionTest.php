@@ -18,7 +18,7 @@ class IntProgEnhancedRelationListExtensionTest extends TestCase
     public function testPrepend()
     {
         $container = $this->createMock(ContainerBuilder::class);
-        $container->expects($this->exactly(2))->method('prependExtensionConfig');
+        $container->expects($this->exactly(3))->method('prependExtensionConfig');
         $container->expects($this->exactly(2))->method('addResource');
 
         $extension = new IntProgEnhancedRelationListExtension();
